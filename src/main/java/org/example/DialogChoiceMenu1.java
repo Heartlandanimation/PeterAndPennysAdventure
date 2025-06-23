@@ -1,6 +1,10 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
+
+import static org.example.WorksWithTheArray.food;
 
 public class DialogChoiceMenu1 {
 
@@ -33,31 +37,32 @@ public class DialogChoiceMenu1 {
     }
 
 
-    public void AgainstSam_ChoiceOne(){
-        System.out.println("<You give sam an item>");
-        // ((Dialog))
-
-
-        // Needs Logic that References Array
-
-
-        //if Sam accepts
-            // Remove Item from <ArrayList>
-        //-----------------------------------------------
-            // ((Dialog))
-            // Peter and Penny walk away
-
-        //If Sam rejects
-            //Offer another Item
-            //Remove Item from <ArrayList>
-
-            //If Sam Accepts
-                  // ((Dialog))
-                  // Peter and Penny walk away
-            //If Sam rejects
-                 //Offer another Item
-                 //Remove Item from <ArrayList>
-                //SO ON AND SO FORTH UNTIL YOUR ARRAY LIST IS EMPTY :((
+    public void AgainstSam_ChoiceOne() {
+        System.out.println("\n****************************************************************************\n");
+        food();
+        boolean samAccepts = false;
+        while (!samAccepts) {
+            ///////////
+            Random randomNumber = new Random();
+            Random randomItem = new Random();
+            int randomInt = randomNumber.nextInt(2) + 1;
+            System.out.println(randomInt);
+            ////////////
+            if (randomInt == 1) {
+                int randomIndex = randomItem.nextInt(food.size());
+                System.out.println("Peter and Penny give same an Item");
+                System.out.println("Sam: This isn't enough for me, GIVE ME MORE!");
+                food.remove(randomIndex);
+                System.out.println("Current food list: " + food);
+            } else if (randomInt == 2) {
+                int randomIndex = randomItem.nextInt(food.size());
+                System.out.println("Peter and Penny give same an Item");
+                System.out.println("Sam: Alright, that's enough... get out of here!");
+                food.remove(randomIndex);
+                samAccepts = true;
+                System.out.println("Current food list: " + food);
+            }
+        }
     }
 
     public void AgainstSam_ChoiceTwo(){
@@ -86,11 +91,9 @@ public class DialogChoiceMenu1 {
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
         boolean doneWithMenu = false;
-        while(doneWithMenu == false){
+        while(!doneWithMenu){
             if (userInput.equals("1")){
-                System.out.println("\n****************************************************************************\n");
-                System.out.println("you offer sam one of the items. (not programmed yet)");
-                System.out.println("Sam decided its enough or its not");
+                AgainstSam_ChoiceOne();
                 doneWithMenu = true;
             }
             else if (userInput.equals("2")){

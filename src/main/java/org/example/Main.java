@@ -34,7 +34,7 @@ public class Main {
 //                   //choice
         ourArray.guessHowManyTimesPennyBites();
         continueTheStory.describingPennyEatingFood();
-//                  //Computation
+                     //Computation
         ourArray.remainingItemsInInventory();
         continueTheStory.pennyFinishedEatingAndTalksWithPeter();
         continueTheStory.samYellingAtPeterAndPenny();

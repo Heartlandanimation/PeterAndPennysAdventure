@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class WorksWithTheArray {
-     ArrayList<String> food = new ArrayList<>();
+     static ArrayList<String> food = new ArrayList<>();
 
     public WorksWithTheArray() {
         Scanner scanner = new Scanner(System.in);
@@ -22,6 +22,9 @@ public class WorksWithTheArray {
             System.out.println("Current food list: " + food);
         }
 
+    }
+
+    public static void food() {
     }
 
 
