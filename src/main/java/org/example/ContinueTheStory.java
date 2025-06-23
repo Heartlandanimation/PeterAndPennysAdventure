@@ -105,7 +105,7 @@ public class ContinueTheStory {
     public void samYellingAtPeterAndPenny() {
         System.out.println("\n****************************************************************************");
         System.out.println("a voice calls from above:\nStranger:");
-        newColor.printlnRed("HEY YOU TWO, WHAT DO YOU THINK YOU'RE DOING???");
+        System.out.println("HEY YOU TWO, WHAT DO YOU THINK YOU'RE DOING???");
         System.out.println("\n****************************************************************************");
         System.out.println("Peter and Penny look upwards, and see a crow in the tall oak tree above the trashcan");
         System.out.println("it flies down and confronts them...Ah its Sam the Crow.");

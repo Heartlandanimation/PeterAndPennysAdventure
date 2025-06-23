@@ -17,33 +17,32 @@ public class Main {
         CharacterDescriptions characterDescriptions = new CharacterDescriptions();
         DialogChoiceMenu1 dialogChoiceMenu1 = new DialogChoiceMenu1();
         continueTheStory.OpeningCredits();
-                   //choice
+//                   //choice
         continueTheStory.areYouAwake();
         characterDescriptions.describePeter();
         continueTheStory.nextPartOfTale();
-                   //choice
+//                   //choice
         continueTheStory.playerChoice1();
         characterDescriptions.describePenny();
         continueTheStory.pennyTalkingToPeter();
-                     //choice
+//                     //choice
         continueTheStory.doYouWantToHelp();
         continueTheStory.knockingOverTrashcan();
-                  //Computation
+//                  //Computation
         WorksWithTheArray ourArray = new WorksWithTheArray();
         ourArray.pennyMunchingStoryElement();
-                   //choice
+//                   //choice
         ourArray.guessHowManyTimesPennyBites();
         continueTheStory.describingPennyEatingFood();
-                  //Computation
+//                  //Computation
         ourArray.remainingItemsInInventory();
         continueTheStory.pennyFinishedEatingAndTalksWithPeter();
         continueTheStory.samYellingAtPeterAndPenny();
         characterDescriptions.describeSamTheCrow();
 
-
         //Dialog Menu Choice
         dialogChoiceMenu1.dialogMenuAgainstSam();
-
+        dialogChoiceMenu1.MethodControlMenu();
     }
 }
 

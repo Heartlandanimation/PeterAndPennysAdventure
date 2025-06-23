@@ -16,7 +16,9 @@ public class CharacterDescriptions {
 
     public void describeSamTheCrow(){
         System.out.println("\n****************************************************************************");
-        System.out.println("What are you doing in my swamp :O");
+        System.out.println("Sam is a 3 foot tall dark feathered crow. He's a little bit of a stubborn old head\n" +
+                            "lots of time you'll see him arguing with locals, he's got a perpetual chip on his shoulder\n" +
+                            "He does have a respectable tattoo on his right arm that says <3 mom ");
 
     }
 

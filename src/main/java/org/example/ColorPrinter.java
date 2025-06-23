@@ -5,7 +5,7 @@ public class ColorPrinter {
     private final String RESET = "\u001B[0m";
 
     public void printlnRed(String message) {
-        System.out.println(RED + "Poopy Butt" + RESET);
+//        System.out.println(RED + "Poopy Butt" + RESET);
     }
 
     public void println(String message) {
